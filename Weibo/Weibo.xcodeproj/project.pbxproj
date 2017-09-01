@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F7BDA1B41F57F4E9008468A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */; };
-		F7BDA1B61F57F4E9008468A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1B51F57F4E9008468A0 /* ViewController.swift */; };
-		F7BDA1B91F57F4E9008468A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BDA1B71F57F4E9008468A0 /* Main.storyboard */; };
 		F7BDA1BB1F57F4E9008468A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */; };
-		F7BDA1BE1F57F4E9008468A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BDA1BC1F57F4E9008468A0 /* LaunchScreen.storyboard */; };
 		F7BDA1C91F57F4EA008468A0 /* WeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1C81F57F4EA008468A0 /* WeiboTests.swift */; };
 		F7BDA1D41F57F4EA008468A0 /* WeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1D31F57F4EA008468A0 /* WeiboUITests.swift */; };
 /* End PBXBuildFile section */
@@ -36,10 +33,7 @@
 /* Begin PBXFileReference section */
 		F7BDA1B01F57F4E9008468A0 /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7BDA1B51F57F4E9008468A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F7BDA1B81F57F4E9008468A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F7BDA1BD1F57F4E9008468A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7BDA1BF1F57F4E9008468A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7BDA1C41F57F4EA008468A0 /* WeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDA1C81F57F4EA008468A0 /* WeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboTests.swift; sourceTree = "<group>"; };
@@ -74,6 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7965A661F5952FE0037DD1F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F7965A671F5952FE0037DD1F /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F7965A671F5952FE0037DD1F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		F7BDA1A71F57F4E9008468A0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +106,9 @@
 		F7BDA1B21F57F4E9008468A0 /* Weibo */ = {
 			isa = PBXGroup;
 			children = (
+				F7965A661F5952FE0037DD1F /* Resource */,
 				F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */,
-				F7BDA1B51F57F4E9008468A0 /* ViewController.swift */,
-				F7BDA1B71F57F4E9008468A0 /* Main.storyboard */,
 				F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */,
-				F7BDA1BC1F57F4E9008468A0 /* LaunchScreen.storyboard */,
 				F7BDA1BF1F57F4E9008468A0 /* Info.plist */,
 			);
 			path = Weibo;
@@ -187,6 +194,7 @@
 		F7BDA1A81F57F4E9008468A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WB;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = DAQSoft;
@@ -235,9 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BDA1BE1F57F4E9008468A0 /* LaunchScreen.storyboard in Resources */,
 				F7BDA1BB1F57F4E9008468A0 /* Assets.xcassets in Resources */,
-				F7BDA1B91F57F4E9008468A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BDA1B61F57F4E9008468A0 /* ViewController.swift in Sources */,
 				F7BDA1B41F57F4E9008468A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,25 +302,6 @@
 			targetProxy = F7BDA1D01F57F4EA008468A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F7BDA1B71F57F4E9008468A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7BDA1B81F57F4E9008468A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F7BDA1BC1F57F4E9008468A0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7BDA1BD1F57F4E9008468A0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F7BDA1D61F57F4EA008468A0 /* Debug */ = {
@@ -415,8 +401,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = YC78659G27;
 				INFOPLIST_FILE = Weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daqsoft.ios.add.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,8 +416,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = YC78659G27;
 				INFOPLIST_FILE = Weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daqsoft.ios.add.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +504,7 @@
 				F7BDA1DA1F57F4EA008468A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7BDA1DB1F57F4EA008468A0 /* Build configuration list for PBXNativeTarget "WeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +513,7 @@
 				F7BDA1DD1F57F4EA008468A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7BDA1DE1F57F4EA008468A0 /* Build configuration list for PBXNativeTarget "WeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +522,7 @@
 				F7BDA1E01F57F4EA008468A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
