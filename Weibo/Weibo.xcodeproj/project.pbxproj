@@ -55,6 +55,7 @@
 		F7BDA1CF1F57F4EA008468A0 /* WeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDA1D31F57F4EA008468A0 /* WeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboUITests.swift; sourceTree = "<group>"; };
 		F7BDA1D51F57F4EA008468A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C06E551F5D3F3A0007DFCF /* OCBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +210,7 @@
 				F7965A681F595D4A0037DD1F /* Class */,
 				F7965A661F5952FE0037DD1F /* Resource */,
 				F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */,
+				F7C06E551F5D3F3A0007DFCF /* OCBridgingHeader.h */,
 				F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */,
 				F7BDA1BF1F57F4E9008468A0 /* Info.plist */,
 			);
@@ -516,6 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daqsoft.ios.add.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Weibo/OCBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -531,6 +534,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daqsoft.ios.add.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Weibo/OCBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
