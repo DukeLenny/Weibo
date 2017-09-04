@@ -14,6 +14,7 @@ class WBTabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setChildViewControllers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +33,40 @@ class WBTabBarController: UITabBarController {
     }
     */
 
+}
+
+extension WBTabBarController {
+    fileprivate func setChildViewControllers() {
+        let dictionaryArray = [
+                                                ["className" : "WBHomeViewController", "title" : "首页", "imageName" : "tabbar_home", "selectedImageName" : "tabbar_home_selected"],
+                                                ["className" : "WBMessageViewController", "title" : "消息", "imageName" : "tabbar_message_center", "selectedImageName" : "tabbar_message_center_selected"],
+                                                ["className" : "WBDiscoverViewController", "title" : "发现", "imageName" : "tabbar_discover", "selectedImageName" : "tabbar_discover_selected"],
+                                                ["className" : "WBProfileViewController", "title" : "我的", "imageName" : "tabbar_profile", "selectedImageName" : "tabbar_profile_selected"]
+                                           ]
+        var vcs = [UIViewController]()
+        for dictionary in dictionaryArray {
+            vcs.append(viewController(dictionary: dictionary))
+        }
+        
+        viewControllers = vcs
+    }
+    
+    /// 根据信息字典得到对应视图控制器
+    ///
+    /// - Parameter dictionary: 信息字典
+    /// - Returns: 视图控制器
+    private func viewController(dictionary: [String : String]) -> UIViewController {
+        guard let className = dictionary["className"], let title = dictionary["title"], let imageName = dictionary["imageName"], let selectedImageName = dictionary["selectedImageName"], let classType = NSClassFromString(Bundle.main.namespace + "." + className) as? UIViewController.Type else {
+            return UIViewController()
+        }
+        
+        let viewController = classType.init()
+        viewController.navigationItem.title = title
+        let navigationController = WBNavigationController(rootViewController: viewController)
+        navigationController.tabBarItem.title = title
+        navigationController.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
+        navigationController.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.withRenderingMode(.alwaysOriginal)
+        
+        return navigationController
+    }
 }

@@ -18,6 +18,7 @@
 		F7BDA1BB1F57F4E9008468A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */; };
 		F7BDA1C91F57F4EA008468A0 /* WeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1C81F57F4EA008468A0 /* WeiboTests.swift */; };
 		F7BDA1D41F57F4EA008468A0 /* WeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1D31F57F4EA008468A0 /* WeiboUITests.swift */; };
+		F7C06E581F5D46CC0007DFCF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C06E571F5D46CC0007DFCF /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F7BDA1D31F57F4EA008468A0 /* WeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboUITests.swift; sourceTree = "<group>"; };
 		F7BDA1D51F57F4EA008468A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7C06E551F5D3F3A0007DFCF /* OCBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBridgingHeader.h; sourceTree = "<group>"; };
+		F7C06E571F5D46CC0007DFCF /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		F7965A6A1F595D4A0037DD1F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				F7C06E561F5D46CC0007DFCF /* Extension */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -233,6 +236,14 @@
 				F7BDA1D51F57F4EA008468A0 /* Info.plist */,
 			);
 			path = WeiboUITests;
+			sourceTree = "<group>";
+		};
+		F7C06E561F5D46CC0007DFCF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F7C06E571F5D46CC0007DFCF /* Bundle+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7965A771F595F030037DD1F /* WBBaseViewController.swift in Sources */,
+				F7C06E581F5D46CC0007DFCF /* Bundle+Extension.swift in Sources */,
 				F7965A7F1F5965460037DD1F /* WBProfileViewController.swift in Sources */,
 				F7965A7D1F59652D0037DD1F /* WBDiscoverViewController.swift in Sources */,
 				F7965A731F595E170037DD1F /* WBTabBarController.swift in Sources */,
