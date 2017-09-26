@@ -41,7 +41,7 @@ extension WBTabBarController {
                                                 ["className" : "WBHomeViewController", "title" : "首页", "imageName" : "tabbar_home", "selectedImageName" : "tabbar_home_selected"],
                                                 ["className" : "WBMessageViewController", "title" : "消息", "imageName" : "tabbar_message_center", "selectedImageName" : "tabbar_message_center_selected"],
                                                 ["className" : "WBDiscoverViewController", "title" : "发现", "imageName" : "tabbar_discover", "selectedImageName" : "tabbar_discover_selected"],
-                                                ["className" : "WBProfileViewController", "title" : "我的", "imageName" : "tabbar_profile", "selectedImageName" : "tabbar_profile_selected"]
+                                                ["className" : "WBProfileViewController", "title" : "我", "imageName" : "tabbar_profile", "selectedImageName" : "tabbar_profile_selected"]
                                            ]
         var vcs = [UIViewController]()
         for dictionary in dictionaryArray {
@@ -62,11 +62,14 @@ extension WBTabBarController {
         
         let viewController = classType.init()
         viewController.navigationItem.title = title
-        let navigationController = WBNavigationController(rootViewController: viewController)
-        navigationController.tabBarItem.title = title
-        navigationController.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
-        navigationController.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.withRenderingMode(.alwaysOriginal)
+        let nc = WBNavigationController(rootViewController: viewController)
+        nc.tabBarItem.title = title
+        nc.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
+        nc.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.withRenderingMode(.alwaysOriginal)
         
-        return navigationController
+        nc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black], for: .selected)
+        nc.tabBarItem.setTitleTextAttributes([NSFontAttributeName : UIFont.systemFont(ofSize: 12)], for: .normal)
+        
+        return nc
     }
 }

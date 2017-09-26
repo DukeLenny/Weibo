@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        sleep(2)
         
+//        let image = UIImage(named: "tabbar_compose_article_neo@3x")
+//        print("\(image!.size)")
+        
         window = UIWindow()
         window?.backgroundColor = UIColor.white
         window?.rootViewController = WBTabBarController()
