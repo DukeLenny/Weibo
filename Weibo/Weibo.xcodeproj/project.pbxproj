@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F77BBFC11F7B57D800BE5924 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77BBFC01F7B57D800BE5924 /* UIButton+Extension.swift */; };
 		F7965A731F595E170037DD1F /* WBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A721F595E170037DD1F /* WBTabBarController.swift */; };
 		F7965A751F595ECA0037DD1F /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A741F595ECA0037DD1F /* WBNavigationController.swift */; };
 		F7965A771F595F030037DD1F /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A761F595F030037DD1F /* WBBaseViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F77BBFC01F7B57D800BE5924 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		F7965A721F595E170037DD1F /* WBTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTabBarController.swift; sourceTree = "<group>"; };
 		F7965A741F595ECA0037DD1F /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
 		F7965A761F595F030037DD1F /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				F7C06E571F5D46CC0007DFCF /* Bundle+Extension.swift */,
+				F77BBFC01F7B57D800BE5924 /* UIButton+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				F7965A771F595F030037DD1F /* WBBaseViewController.swift in Sources */,
 				F7C06E581F5D46CC0007DFCF /* Bundle+Extension.swift in Sources */,
 				F7965A7F1F5965460037DD1F /* WBProfileViewController.swift in Sources */,
+				F77BBFC11F7B57D800BE5924 /* UIButton+Extension.swift in Sources */,
 				F7965A7D1F59652D0037DD1F /* WBDiscoverViewController.swift in Sources */,
 				F7965A731F595E170037DD1F /* WBTabBarController.swift in Sources */,
 				F7965A791F595FBE0037DD1F /* WBHomeViewController.swift in Sources */,

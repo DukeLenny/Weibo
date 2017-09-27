@@ -9,12 +9,19 @@
 import UIKit
 
 class WBTabBarController: UITabBarController {
+    
+    fileprivate lazy var middleButton: UIButton = UIButton.button(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setChildViewControllers()
+        setMiddleButton()
+    }
+    
+    @objc fileprivate func middleButtonClicked() {
+        print("展示出发布微博的界面")
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +47,7 @@ extension WBTabBarController {
         let dictionaryArray = [
                                                 ["className" : "WBHomeViewController", "title" : "首页", "imageName" : "tabbar_home", "selectedImageName" : "tabbar_home_selected"],
                                                 ["className" : "WBMessageViewController", "title" : "消息", "imageName" : "tabbar_message_center", "selectedImageName" : "tabbar_message_center_selected"],
+                                                ["className" : "UIViewController"],
                                                 ["className" : "WBDiscoverViewController", "title" : "发现", "imageName" : "tabbar_discover", "selectedImageName" : "tabbar_discover_selected"],
                                                 ["className" : "WBProfileViewController", "title" : "我", "imageName" : "tabbar_profile", "selectedImageName" : "tabbar_profile_selected"]
                                            ]
@@ -71,5 +79,18 @@ extension WBTabBarController {
         nc.tabBarItem.setTitleTextAttributes([NSFontAttributeName : UIFont.systemFont(ofSize: 12)], for: .normal)
         
         return nc
+    }
+    
+    fileprivate func setMiddleButton() {
+        middleButton.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .highlighted)
+        middleButton.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: .highlighted)
+        
+        tabBar.addSubview(middleButton)
+        
+        let count = CGFloat(childViewControllers.count)
+        let width = tabBar.bounds.width / count - 1.0 // - 1.0是为了盖住容错点
+        middleButton.frame = tabBar.bounds.insetBy(dx: 2 * width, dy: 0) // 向内为正，向外为负
+        
+        middleButton.addTarget(self, action: #selector(middleButtonClicked), for: .touchUpInside)
     }
 }

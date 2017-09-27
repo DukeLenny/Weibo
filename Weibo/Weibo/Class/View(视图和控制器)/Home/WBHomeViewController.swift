@@ -33,3 +33,11 @@ class WBHomeViewController: WBBaseViewController {
     */
 
 }
+
+extension WBHomeViewController {
+    override func setUI() {
+        super.setUI()
+        
+        
+    }
+}

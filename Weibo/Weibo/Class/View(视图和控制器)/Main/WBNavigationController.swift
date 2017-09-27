@@ -33,3 +33,12 @@ class WBNavigationController: UINavigationController {
     */
 
 }
+
+extension WBNavigationController {
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if childViewControllers.count > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        super.pushViewController(viewController, animated: animated)
+    }
+}

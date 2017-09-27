@@ -12,8 +12,9 @@ class WBBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        setUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +33,10 @@ class WBBaseViewController: UIViewController {
     }
     */
 
+}
+
+extension WBBaseViewController {
+    func setUI() {
+        view.backgroundColor = UIColor.white
+    }
 }
