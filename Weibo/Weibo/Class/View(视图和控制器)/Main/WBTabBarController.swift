@@ -10,7 +10,7 @@ import UIKit
 
 class WBTabBarController: UITabBarController {
     
-    fileprivate lazy var middleButton: UIButton = UIButton.button(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+    fileprivate lazy var middleButton: UIButton = UIButton.button(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button", highlightedImageName: "tabbar_compose_icon_add_highlighted", highlightedBackgroundImageName: "tabbar_compose_button_highlighted")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,8 +82,6 @@ extension WBTabBarController {
     }
     
     fileprivate func setMiddleButton() {
-        middleButton.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .highlighted)
-        middleButton.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: .highlighted)
         
         tabBar.addSubview(middleButton)
         
