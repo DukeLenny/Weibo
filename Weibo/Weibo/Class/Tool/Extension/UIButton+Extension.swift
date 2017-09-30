@@ -80,6 +80,25 @@ extension UIButton {
     // 3.addTarget
     convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear, imageName: String, highlightedImageName: String? = nil, selectedImageName: String? = nil, horizontalSpace: CGFloat? = nil) {
         self.init(title: title, titleColor: titleColor, font: font, highlightedTitle: highlightedTitle, highlightedTitleColor: highlightedTitleColor, selectedTitle: selectedTitle, selectedTitleColor: selectedTitleColor, bgColor: bgColor, imageName: imageName, highlightedImageName: highlightedImageName, selectedImageName: selectedImageName)
-        // 2个问题
+        
+        if let image = UIImage(named: imageName) {
+            setImage(image, for: .normal)
+            
+            if let highlightedImageName = highlightedImageName {
+                setImage(UIImage(named: highlightedImageName), for: .highlighted)
+            }
+            
+            if let selectedImageName = selectedImageName {
+                setImage(UIImage(named: selectedImageName), for: .selected)
+            }
+            
+            if let horizontalSpace = horizontalSpace {
+                let edgeInset = horizontalSpace / 2.0
+                imageEdgeInsets = UIEdgeInsetsMake(0, -edgeInset, 0, edgeInset)
+                titleEdgeInsets = UIEdgeInsetsMake(0, edgeInset, 0, -edgeInset)
+            }
+            
+            sizeToFit()
+        }
     }
 }

@@ -15,6 +15,13 @@ class WBHomeViewController: WBBaseViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @objc fileprivate func barButtonClicked() {
+        print(#function)
+        
+        let vc = WBDemoViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -38,6 +45,6 @@ extension WBHomeViewController {
     override func setUI() {
         super.setUI()
         
-        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(barButtonClicked), imageName: nil, highlightedImageName: nil)
     }
 }

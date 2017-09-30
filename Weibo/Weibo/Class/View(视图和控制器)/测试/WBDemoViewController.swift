@@ -33,3 +33,7 @@ class WBDemoViewController: WBBaseViewController {
     */
 
 }
+
+extension WBDemoViewController {
+    
+}

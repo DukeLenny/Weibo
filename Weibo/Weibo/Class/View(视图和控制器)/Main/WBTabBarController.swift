@@ -75,7 +75,7 @@ extension WBTabBarController {
         nc.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
         nc.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.withRenderingMode(.alwaysOriginal)
         
-        nc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black], for: .selected)
+        nc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : TabBarTintColor], for: .selected)
         nc.tabBarItem.setTitleTextAttributes([NSFontAttributeName : UIFont.systemFont(ofSize: 12)], for: .normal)
         
         return nc
