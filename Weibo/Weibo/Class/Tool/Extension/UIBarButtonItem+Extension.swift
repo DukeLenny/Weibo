@@ -10,7 +10,7 @@ import UIKit
 
 extension UIBarButtonItem {
     convenience init(title: String = BarButtonItemTitle, titleColor: UIColor = NavigationBarTintColor, font: UIFont = BarButtonItemFont, highlightedTitleColor: UIColor? = NavigationBarHighlightedTintColor, target: Any?, action: Selector, imageName: String? = NavigationBarBackImageName, highlightedImageName: String? = NavigationBarBackHighlightedImageName, horizontalSpace: CGFloat? = nil) {
-        let button = UIButton(title: title, titleColor: titleColor, font: font, highlightedTitleColor: highlightedTitleColor, imageName: imageName ?? "", highlightedImageName: highlightedImageName, horizontalSpace: horizontalSpace)
+        let button = UIButton(title: title, titleColor: titleColor, font: font, highlightedTitleColor: highlightedTitleColor, imageName: imageName, highlightedImageName: highlightedImageName, horizontalSpace: horizontalSpace)
         button.addTarget(target, action: action, for: .touchUpInside)
         self.init(customView: button)
     }

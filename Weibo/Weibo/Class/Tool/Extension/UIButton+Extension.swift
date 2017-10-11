@@ -41,12 +41,12 @@ extension UIButton {
         return button
     }
     
-    // 实例化一个没有backgroundImage和image而有title的button
+    // 实例化一个没有backgroundImage,可能没有image可能有image而有title的button
     // 还需设置：
     // 1.addSubview
     // 2.frame
     // 3.addTarget
-    convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear) {
+    convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear, imageName: String? = nil, highlightedImageName: String? = nil, selectedImageName: String? = nil, horizontalSpace: CGFloat? = nil) {
         self.init(type: .custom)
         
         backgroundColor = bgColor
@@ -71,17 +71,7 @@ extension UIButton {
         
         sizeToFit()
         
-    }
-    
-    // 实例化一个没有backgroundImage而有title和image的button
-    // 还需设置：
-    // 1.addSubview
-    // 2.frame
-    // 3.addTarget
-    convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear, imageName: String, highlightedImageName: String? = nil, selectedImageName: String? = nil, horizontalSpace: CGFloat? = nil) {
-        self.init(title: title, titleColor: titleColor, font: font, highlightedTitle: highlightedTitle, highlightedTitleColor: highlightedTitleColor, selectedTitle: selectedTitle, selectedTitleColor: selectedTitleColor, bgColor: bgColor, imageName: imageName, highlightedImageName: highlightedImageName, selectedImageName: selectedImageName)
-        
-        if let image = UIImage(named: imageName) {
+        if let image = UIImage(named: imageName ?? "") {
             setImage(image, for: .normal)
             
             if let highlightedImageName = highlightedImageName {
