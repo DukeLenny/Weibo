@@ -47,6 +47,9 @@ extension WBDemoViewController {
         
         view.backgroundColor = UIColor.random()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", target: self, action: #selector(barButtonClicked), imageName: nil, highlightedImageName: nil)
+        navItem.title = "第\(navigationController?.childViewControllers.count ?? 0)个"
+        
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", target: self, action: #selector(barButtonClicked), imageName: nil, highlightedImageName: nil)
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", target: self, action: #selector(barButtonClicked), imageName: nil, highlightedImageName: nil)
     }
 }

@@ -47,7 +47,7 @@ extension WBTabBarController {
         let dictionaryArray = [
                                                 ["className" : "WBHomeViewController", "title" : "首页", "imageName" : "tabbar_home", "selectedImageName" : "tabbar_home_selected"],
                                                 ["className" : "WBMessageViewController", "title" : "消息", "imageName" : "tabbar_message_center", "selectedImageName" : "tabbar_message_center_selected"],
-                                                ["className" : "UIViewController"],
+                                                ["className" : "WBBaseViewController"],
                                                 ["className" : "WBDiscoverViewController", "title" : "发现", "imageName" : "tabbar_discover", "selectedImageName" : "tabbar_discover_selected"],
                                                 ["className" : "WBProfileViewController", "title" : "我", "imageName" : "tabbar_profile", "selectedImageName" : "tabbar_profile_selected"]
                                            ]
@@ -64,12 +64,13 @@ extension WBTabBarController {
     /// - Parameter dictionary: 信息字典
     /// - Returns: 视图控制器
     private func viewController(dictionary: [String : String]) -> UIViewController {
-        guard let className = dictionary["className"], let title = dictionary["title"], let imageName = dictionary["imageName"], let selectedImageName = dictionary["selectedImageName"], let classType = NSClassFromString(Bundle.main.namespace + "." + className) as? UIViewController.Type else {
-            return UIViewController()
+        guard let className = dictionary["className"], let title = dictionary["title"], let imageName = dictionary["imageName"], let selectedImageName = dictionary["selectedImageName"], let classType = NSClassFromString(Bundle.main.namespace + "." + className) as? WBBaseViewController.Type else {
+            return WBBaseViewController()
         }
         
         let viewController = classType.init()
-        viewController.navigationItem.title = title
+//        viewController.navigationItem.title = title
+        viewController.navItem.title = title
         let nc = WBNavigationController(rootViewController: viewController)
         nc.tabBarItem.title = title
         nc.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)

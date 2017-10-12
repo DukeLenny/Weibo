@@ -9,6 +9,22 @@
 import UIKit
 
 class WBBaseViewController: UIViewController {
+    
+    var navigationBarHeight: CGFloat {
+        guard let navigationController = navigationController else {
+            return StatusBarHeight
+        }
+        return StatusBarHeight + navigationController.navigationBar.bounds.size.height
+    }
+    
+    lazy var navigationBar = UINavigationBar()
+    lazy var navItem = UINavigationItem()
+    
+    override var title: String? {
+        didSet {
+            navItem.title = title
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,5 +54,11 @@ class WBBaseViewController: UIViewController {
 extension WBBaseViewController {
     func setUI() {
         view.backgroundColor = UIColor.white
+        
+        navigationBar.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: navigationBarHeight)
+        view.addSubview(navigationBar)
+        navigationBar.items = [navItem]
+        navigationBar.barTintColor = NavigationBarBarTintColor
+        navigationBar.isTranslucent = false
     }
 }
