@@ -60,5 +60,6 @@ extension WBBaseViewController {
         navigationBar.items = [navItem]
         navigationBar.barTintColor = NavigationBarBarTintColor
         navigationBar.isTranslucent = false
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : NavigationBarTintColor]
     }
 }
