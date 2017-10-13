@@ -57,3 +57,27 @@ extension WBNavigationController {
         super.pushViewController(viewController, animated: animated)
     }
 }
+
+// MARK: - Rotation
+extension WBNavigationController {
+    override var shouldAutorotate: Bool {
+        if let topViewController = topViewController {
+            return topViewController.shouldAutorotate
+        }
+        return true
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if let topViewController = topViewController {
+            return topViewController.supportedInterfaceOrientations
+        }
+        return .portrait
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        if let topViewController = topViewController {
+            return topViewController.preferredInterfaceOrientationForPresentation
+        }
+        return .portrait
+    }
+}

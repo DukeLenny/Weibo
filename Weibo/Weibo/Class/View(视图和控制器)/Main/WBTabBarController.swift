@@ -93,3 +93,27 @@ extension WBTabBarController {
         middleButton.addTarget(self, action: #selector(middleButtonClicked), for: .touchUpInside)
     }
 }
+
+// MARK: - Rotation
+extension WBTabBarController {
+    override var shouldAutorotate: Bool {
+        if let selectedViewController = selectedViewController {
+            return selectedViewController.shouldAutorotate
+        }
+        return true
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if let selectedViewController = selectedViewController {
+            return selectedViewController.supportedInterfaceOrientations
+        }
+        return .portrait
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        if let selectedViewController = selectedViewController {
+            return selectedViewController.preferredInterfaceOrientationForPresentation
+        }
+        return .portrait
+    }
+}
