@@ -21,6 +21,8 @@
 		F7965A7B1F59650A0037DD1F /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A7A1F59650A0037DD1F /* WBMessageViewController.swift */; };
 		F7965A7D1F59652D0037DD1F /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A7C1F59652D0037DD1F /* WBDiscoverViewController.swift */; };
 		F7965A7F1F5965460037DD1F /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A7E1F5965460037DD1F /* WBProfileViewController.swift */; };
+		F79705521F90A9EA003D8D7A /* WBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79705511F90A9EA003D8D7A /* WBTableViewController.swift */; };
+		F7B361581F98A6DC00AF4C09 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B361571F98A6DC00AF4C09 /* NSObject+Extension.swift */; };
 		F7BDA1B41F57F4E9008468A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */; };
 		F7BDA1BB1F57F4E9008468A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */; };
 		F7BDA1C91F57F4EA008468A0 /* WeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1C81F57F4EA008468A0 /* WeiboTests.swift */; };
@@ -60,6 +62,8 @@
 		F7965A7A1F59650A0037DD1F /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
 		F7965A7C1F59652D0037DD1F /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
 		F7965A7E1F5965460037DD1F /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
+		F79705511F90A9EA003D8D7A /* WBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTableViewController.swift; sourceTree = "<group>"; };
+		F7B361571F98A6DC00AF4C09 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F7BDA1B01F57F4E9008468A0 /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 				F7965A721F595E170037DD1F /* WBTabBarController.swift */,
 				F7965A741F595ECA0037DD1F /* WBNavigationController.swift */,
 				F7965A761F595F030037DD1F /* WBBaseViewController.swift */,
+				F79705511F90A9EA003D8D7A /* WBTableViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				F77BBFC01F7B57D800BE5924 /* UIButton+Extension.swift */,
 				F763E9101F7DFB1E005F1A74 /* UIBarButtonItem+Extension.swift */,
 				F763E9191F7E4279005F1A74 /* UIColor+Extension.swift */,
+				F7B361571F98A6DC00AF4C09 /* NSObject+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -425,10 +431,12 @@
 				F7C06E581F5D46CC0007DFCF /* Bundle+Extension.swift in Sources */,
 				F7965A7F1F5965460037DD1F /* WBProfileViewController.swift in Sources */,
 				F77BBFC11F7B57D800BE5924 /* UIButton+Extension.swift in Sources */,
+				F79705521F90A9EA003D8D7A /* WBTableViewController.swift in Sources */,
 				F7965A7D1F59652D0037DD1F /* WBDiscoverViewController.swift in Sources */,
 				F763E9111F7DFB1E005F1A74 /* UIBarButtonItem+Extension.swift in Sources */,
 				F7965A731F595E170037DD1F /* WBTabBarController.swift in Sources */,
 				F7965A791F595FBE0037DD1F /* WBHomeViewController.swift in Sources */,
+				F7B361581F98A6DC00AF4C09 /* NSObject+Extension.swift in Sources */,
 				F763E91A1F7E4279005F1A74 /* UIColor+Extension.swift in Sources */,
 				F763E9181F7E3E9C005F1A74 /* Function.swift in Sources */,
 				F763E9161F7E3E2C005F1A74 /* Constant.swift in Sources */,

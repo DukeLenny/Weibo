@@ -26,5 +26,5 @@ let Window = APPDELEGATE?.window
 
 let StatusBarHeight = Application.statusBarFrame.size.height
 
-
+let SystemVersion = UIDevice.current.systemVersion
 		
