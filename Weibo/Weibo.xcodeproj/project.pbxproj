@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F738CF8320414B39002D5748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F738CF8120414B39002D5748 /* LaunchScreen.storyboard */; };
 		F763E9111F7DFB1E005F1A74 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763E9101F7DFB1E005F1A74 /* UIBarButtonItem+Extension.swift */; };
 		F763E9141F7E3C2A005F1A74 /* URLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763E9131F7E3C2A005F1A74 /* URLString.swift */; };
 		F763E9161F7E3E2C005F1A74 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763E9151F7E3E2C005F1A74 /* Constant.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F738CF8220414B39002D5748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F763E9101F7DFB1E005F1A74 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		F763E9131F7E3C2A005F1A74 /* URLString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLString.swift; sourceTree = "<group>"; };
 		F763E9151F7E3E2C005F1A74 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			children = (
 				F7965A681F595D4A0037DD1F /* Class */,
 				F7965A661F5952FE0037DD1F /* Resource */,
+				F738CF8120414B39002D5748 /* LaunchScreen.storyboard */,
 				F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */,
 				F7C06E551F5D3F3A0007DFCF /* OCBridgingHeader.h */,
 				F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */,
@@ -401,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7BDA1BB1F57F4E9008468A0 /* Assets.xcassets in Resources */,
+				F738CF8320414B39002D5748 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +480,17 @@
 			targetProxy = F7BDA1D01F57F4EA008468A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F738CF8120414B39002D5748 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F738CF8220414B39002D5748 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F7BDA1D61F57F4EA008468A0 /* Debug */ = {
@@ -578,7 +593,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = YC78659G27;
 				INFOPLIST_FILE = Weibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daqsoft.ios.add.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,7 +609,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = YC78659G27;
 				INFOPLIST_FILE = Weibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daqsoft.ios.add.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

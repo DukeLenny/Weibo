@@ -10,6 +10,8 @@ import UIKit
 
 class WBTabBarController: UITabBarController {
     
+    fileprivate let errorTolerantRate: CGFloat = 1.0
+    
     fileprivate lazy var middleButton: UIButton = UIButton.button(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button", highlightedImageName: "tabbar_compose_icon_add_highlighted", highlightedBackgroundImageName: "tabbar_compose_button_highlighted")
 
     override func viewDidLoad() {
@@ -87,7 +89,7 @@ extension WBTabBarController {
         tabBar.addSubview(middleButton)
         
         let count = CGFloat(childViewControllers.count)
-        let width = tabBar.bounds.width / count - 1.0 // - 1.0是为了盖住容错点
+        let width = tabBar.bounds.width / count - errorTolerantRate // - 1.0是为了盖住容错点
         middleButton.frame = tabBar.bounds.insetBy(dx: 2 * width, dy: 0) // 向内为正，向外为负
         
         middleButton.addTarget(self, action: #selector(middleButtonClicked), for: .touchUpInside)
