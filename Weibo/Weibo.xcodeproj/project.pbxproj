@@ -15,14 +15,15 @@
 		F763E91A1F7E4279005F1A74 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763E9191F7E4279005F1A74 /* UIColor+Extension.swift */; };
 		F763E91D1F7E49C3005F1A74 /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763E91C1F7E49C3005F1A74 /* WBDemoViewController.swift */; };
 		F77BBFC11F7B57D800BE5924 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77BBFC01F7B57D800BE5924 /* UIButton+Extension.swift */; };
-		F7965A731F595E170037DD1F /* WBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A721F595E170037DD1F /* WBTabBarController.swift */; };
-		F7965A751F595ECA0037DD1F /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A741F595ECA0037DD1F /* WBNavigationController.swift */; };
-		F7965A771F595F030037DD1F /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A761F595F030037DD1F /* WBBaseViewController.swift */; };
-		F7965A791F595FBE0037DD1F /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A781F595FBE0037DD1F /* WBHomeViewController.swift */; };
-		F7965A7B1F59650A0037DD1F /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A7A1F59650A0037DD1F /* WBMessageViewController.swift */; };
-		F7965A7D1F59652D0037DD1F /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A7C1F59652D0037DD1F /* WBDiscoverViewController.swift */; };
-		F7965A7F1F5965460037DD1F /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7965A7E1F5965460037DD1F /* WBProfileViewController.swift */; };
-		F79705521F90A9EA003D8D7A /* WBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79705511F90A9EA003D8D7A /* WBTableViewController.swift */; };
+		F7A7B89120452BBE00359917 /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B88D20452BBE00359917 /* WBBaseViewController.swift */; };
+		F7A7B89220452BBE00359917 /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B88E20452BBE00359917 /* WBNavigationController.swift */; };
+		F7A7B89320452BBE00359917 /* WBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B88F20452BBE00359917 /* WBTabBarController.swift */; };
+		F7A7B89420452BBE00359917 /* WBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B89020452BBE00359917 /* WBTableViewController.swift */; };
+		F7A7B89820452BC600359917 /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B89620452BC600359917 /* WBHomeViewController.swift */; };
+		F7A7B89C20452BD000359917 /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B89B20452BD000359917 /* WBMessageViewController.swift */; };
+		F7A7B8A020452BD700359917 /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B89E20452BD700359917 /* WBDiscoverViewController.swift */; };
+		F7A7B8A420452BE000359917 /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B8A320452BE000359917 /* WBProfileViewController.swift */; };
+		F7A7B8A620452F8200359917 /* WBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7B8A520452F8200359917 /* WBNavigationBar.swift */; };
 		F7B361581F98A6DC00AF4C09 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B361571F98A6DC00AF4C09 /* NSObject+Extension.swift */; };
 		F7BDA1B41F57F4E9008468A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */; };
 		F7BDA1BB1F57F4E9008468A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BDA1BA1F57F4E9008468A0 /* Assets.xcassets */; };
@@ -57,14 +58,15 @@
 		F763E9191F7E4279005F1A74 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F763E91C1F7E49C3005F1A74 /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		F77BBFC01F7B57D800BE5924 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
-		F7965A721F595E170037DD1F /* WBTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTabBarController.swift; sourceTree = "<group>"; };
-		F7965A741F595ECA0037DD1F /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
-		F7965A761F595F030037DD1F /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
-		F7965A781F595FBE0037DD1F /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
-		F7965A7A1F59650A0037DD1F /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
-		F7965A7C1F59652D0037DD1F /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
-		F7965A7E1F5965460037DD1F /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
-		F79705511F90A9EA003D8D7A /* WBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTableViewController.swift; sourceTree = "<group>"; };
+		F7A7B88D20452BBE00359917 /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
+		F7A7B88E20452BBE00359917 /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
+		F7A7B88F20452BBE00359917 /* WBTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTabBarController.swift; sourceTree = "<group>"; };
+		F7A7B89020452BBE00359917 /* WBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTableViewController.swift; sourceTree = "<group>"; };
+		F7A7B89620452BC600359917 /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
+		F7A7B89B20452BD000359917 /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
+		F7A7B89E20452BD700359917 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
+		F7A7B8A320452BE000359917 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
+		F7A7B8A520452F8200359917 /* WBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBNavigationBar.swift; sourceTree = "<group>"; };
 		F7B361571F98A6DC00AF4C09 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F7BDA1B01F57F4E9008468A0 /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDA1B31F57F4E9008468A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +183,8 @@
 		F7965A6C1F595D4A0037DD1F /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				F7965A7C1F59652D0037DD1F /* WBDiscoverViewController.swift */,
+				F7A7B89D20452BD700359917 /* Controller */,
+				F7A7B89F20452BD700359917 /* View */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -189,7 +192,8 @@
 		F7965A6D1F595D4A0037DD1F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F7965A781F595FBE0037DD1F /* WBHomeViewController.swift */,
+				F7A7B89520452BC600359917 /* Controller */,
+				F7A7B89720452BC600359917 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -197,10 +201,8 @@
 		F7965A6E1F595D4A0037DD1F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F7965A721F595E170037DD1F /* WBTabBarController.swift */,
-				F7965A741F595ECA0037DD1F /* WBNavigationController.swift */,
-				F7965A761F595F030037DD1F /* WBBaseViewController.swift */,
-				F79705511F90A9EA003D8D7A /* WBTableViewController.swift */,
+				F7A7B88C20452BBE00359917 /* Controller */,
+				F7A7B88B20452BBD00359917 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -208,7 +210,8 @@
 		F7965A6F1F595D4A0037DD1F /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				F7965A7A1F59650A0037DD1F /* WBMessageViewController.swift */,
+				F7A7B89A20452BD000359917 /* Controller */,
+				F7A7B89920452BD000359917 /* View */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -216,7 +219,8 @@
 		F7965A701F595D4A0037DD1F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F7965A7E1F5965460037DD1F /* WBProfileViewController.swift */,
+				F7A7B8A220452BE000359917 /* Controller */,
+				F7A7B8A120452BE000359917 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -226,6 +230,85 @@
 			children = (
 			);
 			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
+		F7A7B88B20452BBD00359917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7B8A520452F8200359917 /* WBNavigationBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A7B88C20452BBE00359917 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7B88D20452BBE00359917 /* WBBaseViewController.swift */,
+				F7A7B88E20452BBE00359917 /* WBNavigationController.swift */,
+				F7A7B88F20452BBE00359917 /* WBTabBarController.swift */,
+				F7A7B89020452BBE00359917 /* WBTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7A7B89520452BC600359917 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7B89620452BC600359917 /* WBHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7A7B89720452BC600359917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A7B89920452BD000359917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A7B89A20452BD000359917 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7B89B20452BD000359917 /* WBMessageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7A7B89D20452BD700359917 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7B89E20452BD700359917 /* WBDiscoverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7A7B89F20452BD700359917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A7B8A120452BE000359917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A7B8A220452BE000359917 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7B8A320452BE000359917 /* WBProfileViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F7BDA1A71F57F4E9008468A0 = {
@@ -430,23 +513,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F763E9141F7E3C2A005F1A74 /* URLString.swift in Sources */,
-				F7965A771F595F030037DD1F /* WBBaseViewController.swift in Sources */,
 				F763E91D1F7E49C3005F1A74 /* WBDemoViewController.swift in Sources */,
+				F7A7B89820452BC600359917 /* WBHomeViewController.swift in Sources */,
 				F7C06E581F5D46CC0007DFCF /* Bundle+Extension.swift in Sources */,
-				F7965A7F1F5965460037DD1F /* WBProfileViewController.swift in Sources */,
+				F7A7B89120452BBE00359917 /* WBBaseViewController.swift in Sources */,
+				F7A7B89C20452BD000359917 /* WBMessageViewController.swift in Sources */,
 				F77BBFC11F7B57D800BE5924 /* UIButton+Extension.swift in Sources */,
-				F79705521F90A9EA003D8D7A /* WBTableViewController.swift in Sources */,
-				F7965A7D1F59652D0037DD1F /* WBDiscoverViewController.swift in Sources */,
 				F763E9111F7DFB1E005F1A74 /* UIBarButtonItem+Extension.swift in Sources */,
-				F7965A731F595E170037DD1F /* WBTabBarController.swift in Sources */,
-				F7965A791F595FBE0037DD1F /* WBHomeViewController.swift in Sources */,
 				F7B361581F98A6DC00AF4C09 /* NSObject+Extension.swift in Sources */,
+				F7A7B89320452BBE00359917 /* WBTabBarController.swift in Sources */,
 				F763E91A1F7E4279005F1A74 /* UIColor+Extension.swift in Sources */,
+				F7A7B89220452BBE00359917 /* WBNavigationController.swift in Sources */,
 				F763E9181F7E3E9C005F1A74 /* Function.swift in Sources */,
+				F7A7B8A420452BE000359917 /* WBProfileViewController.swift in Sources */,
 				F763E9161F7E3E2C005F1A74 /* Constant.swift in Sources */,
+				F7A7B89420452BBE00359917 /* WBTableViewController.swift in Sources */,
+				F7A7B8A020452BD700359917 /* WBDiscoverViewController.swift in Sources */,
+				F7A7B8A620452F8200359917 /* WBNavigationBar.swift in Sources */,
 				F7BDA1B41F57F4E9008468A0 /* AppDelegate.swift in Sources */,
-				F7965A751F595ECA0037DD1F /* WBNavigationController.swift in Sources */,
-				F7965A7B1F59650A0037DD1F /* WBMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

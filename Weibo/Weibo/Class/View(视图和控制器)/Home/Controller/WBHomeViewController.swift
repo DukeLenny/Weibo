@@ -14,6 +14,7 @@ class WBHomeViewController: WBBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
     
     @objc fileprivate func barButtonClicked() {

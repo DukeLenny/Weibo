@@ -22,3 +22,10 @@ func setAutomaticallyAdjustsScrollViewInsetsFalse(scrollView: UIScrollView, vc: 
         vc.automaticallyAdjustsScrollViewInsets = false
     }
 }
+
+//MARK:- 获取导航栏的高度
+func navigationBarHeight() -> CGFloat {
+    let viewController = UIViewController()
+    let navigationController = UINavigationController(rootViewController: viewController)
+    return navigationController.navigationBar.bounds.size.height
+}
