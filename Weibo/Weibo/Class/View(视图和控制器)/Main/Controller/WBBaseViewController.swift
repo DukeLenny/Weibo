@@ -24,6 +24,8 @@ class WBBaseViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        setProperties()
+        
         setUI()
     }
 
@@ -45,9 +47,18 @@ class WBBaseViewController: UIViewController {
 
 }
 
+//MARK:- 设置viewController的属性
+extension WBBaseViewController {
+    func setProperties() {
+        
+    }
+}
+
 extension WBBaseViewController {
     func setUI() {
         view.backgroundColor = UIColor.white
+        
+        
         
         setNavigationBar()
     }

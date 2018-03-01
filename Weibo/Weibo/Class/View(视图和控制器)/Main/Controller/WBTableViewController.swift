@@ -10,6 +10,10 @@ import UIKit
 
 class WBTableViewController: WBBaseViewController {
 
+    var tableView: UITableView = UITableView()
+    
+    var tableViewStyle: UITableViewStyle = .plain
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +36,51 @@ class WBTableViewController: WBBaseViewController {
     }
     */
 
+}
+
+extension WBTableViewController {
+    override func setProperties() {
+        super.setProperties()
+        
+        tableViewStyle = .plain
+    }
+}
+
+extension WBTableViewController {
+    override func setUI() {
+        super.setUI()
+        
+        setTableView()
+        
+        setAutomaticallyAdjustsScrollViewInsetsFalse(scrollView: tableView, vc: self)
+    }
+    
+    //TODO: 子类需要重写这个方法，需要调super,主要做tableView的register操作
+    func setTableView() {
+        let tableView = UITableView(frame: view.bounds, style: tableViewStyle)
+        tableView.backgroundColor = UIColor.clear
+        tableView.delegate = self
+        tableView.dataSource = self
+        view.addSubview(tableView)
+        self.tableView = tableView
+        
+        tableView.estimatedRowHeight = 0.0;
+        tableView.estimatedSectionHeaderHeight = 0.0;
+        tableView.estimatedSectionFooterHeight = 0.0;
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
+    }
+}
+
+//TODO: 子类需要重写这两个方法,不需要调super
+extension WBTableViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }
