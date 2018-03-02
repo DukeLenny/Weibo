@@ -55,13 +55,17 @@ extension WBTableViewController {
         setAutomaticallyAdjustsScrollViewInsetsFalse(scrollView: tableView, vc: self)
     }
     
-    //TODO: 子类需要重写这个方法，需要调super,主要做tableView的register操作
+    //FIXME: 子类需要重写这个方法，需要调super,主要做tableView的register操作
     func setTableView() {
         let tableView = UITableView(frame: view.bounds, style: tableViewStyle)
         tableView.backgroundColor = UIColor.clear
         tableView.delegate = self
         tableView.dataSource = self
-        view.addSubview(tableView)
+        if tableViewStyle == .plain {
+            tableView.tableFooterView = UIView()
+        }
+//        view.addSubview(tableView)
+        view.insertSubview(tableView, belowSubview: navigationBar)
         self.tableView = tableView
         
         tableView.estimatedRowHeight = 0.0;
@@ -70,11 +74,11 @@ extension WBTableViewController {
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
-        
+        tableView.contentInset = UIEdgeInsets(top: TopBarHeight, left: 0, bottom: 0, right: 0)
     }
 }
 
-//TODO: 子类需要重写这两个方法,不需要调super
+//FIXME: 子类需要重写这两个方法,不需要调super
 extension WBTableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0;

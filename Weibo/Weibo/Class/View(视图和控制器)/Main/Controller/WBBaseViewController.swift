@@ -64,7 +64,7 @@ extension WBBaseViewController {
     }
     
     private func setNavigationBar() {
-        navigationBar.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: topBarHeight)
+        navigationBar.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: TopBarHeight)
         view.addSubview(navigationBar)
         navigationBar.items = [navItem]
         navigationBar.barTintColor = NavigationBarBarTintColor
