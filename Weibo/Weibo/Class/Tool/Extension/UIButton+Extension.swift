@@ -41,12 +41,11 @@ extension UIButton {
         return button
     }
     
-    // 实例化一个没有backgroundImage,可能没有image可能有image而有title的button
+    // 实例化一个"可能没有backgroundImage可能有backgroundImage",可能没有image可能有image而有title的button
     // 还需设置：
     // 1.addSubview
     // 2.frame
-    // 3.addTarget
-    convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear, imageName: String? = nil, highlightedImageName: String? = nil, selectedImageName: String? = nil, horizontalSpace: CGFloat? = nil) {
+    convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear, imageName: String? = nil, highlightedImageName: String? = nil, selectedImageName: String? = nil, horizontalSpace: CGFloat? = nil, target: Any? = nil, action: Selector? = nil) {
         self.init(type: .custom)
         
         backgroundColor = bgColor
@@ -69,8 +68,6 @@ extension UIButton {
             setTitle(selectedTitle, for: .selected)
         }
         
-        sizeToFit()
-        
         if let image = UIImage(named: imageName ?? "") {
             setImage(image, for: .normal)
             
@@ -87,8 +84,12 @@ extension UIButton {
                 imageEdgeInsets = UIEdgeInsetsMake(0, -edgeInset, 0, edgeInset)
                 titleEdgeInsets = UIEdgeInsetsMake(0, edgeInset, 0, -edgeInset)
             }
-            
-            sizeToFit()
+        }
+        
+        sizeToFit()
+        
+        if let target = target,let action = action {
+            addTarget(target, action: action, for: .touchUpInside)
         }
     }
 }
