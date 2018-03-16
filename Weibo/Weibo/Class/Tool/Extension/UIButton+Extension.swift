@@ -41,11 +41,11 @@ extension UIButton {
         return button
     }
     
-    // 实例化一个"可能没有backgroundImage可能有backgroundImage",可能没有image可能有image而有title的button
+    // 实例化一个可能没有backgroundImage可能有backgroundImage,可能没有image可能有image"而有title"的button
     // 还需设置：
     // 1.addSubview
     // 2.frame
-    convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear, imageName: String? = nil, highlightedImageName: String? = nil, selectedImageName: String? = nil, horizontalSpace: CGFloat? = nil, target: Any? = nil, action: Selector? = nil) {
+    convenience init(title: String, titleColor: UIColor, font: UIFont, highlightedTitle: String? = nil, highlightedTitleColor: UIColor? = nil, selectedTitle: String? = nil, selectedTitleColor: UIColor? = nil, bgColor: UIColor = UIColor.clear, imageName: String? = nil, highlightedImageName: String? = nil, selectedImageName: String? = nil, horizontalSpace: CGFloat? = nil, target: Any? = nil, action: Selector? = nil, backgroundImageName: String? = nil, highlightedBackgroundImageName: String? = nil, selectedBackgroundImageName: String? = nil) {
         self.init(type: .custom)
         
         backgroundColor = bgColor
@@ -83,6 +83,17 @@ extension UIButton {
                 let edgeInset = horizontalSpace / 2.0
                 imageEdgeInsets = UIEdgeInsetsMake(0, -edgeInset, 0, edgeInset)
                 titleEdgeInsets = UIEdgeInsetsMake(0, edgeInset, 0, -edgeInset)
+            }
+        }
+        
+        if let backgroundImageName = backgroundImageName {
+            setBackgroundImage(UIImage(named: backgroundImageName), for: .normal)
+            
+            if let highlightedBackgroundImageName = highlightedBackgroundImageName {
+                setBackgroundImage(UIImage(named: highlightedBackgroundImageName), for: .highlighted)
+            }
+            if let selectedBackgroundImageName = selectedBackgroundImageName {
+                setBackgroundImage(UIImage(named: selectedBackgroundImageName), for: .selected)
             }
         }
         
